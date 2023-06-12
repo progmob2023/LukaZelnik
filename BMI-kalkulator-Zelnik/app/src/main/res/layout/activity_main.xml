@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unesi svoju težinu:"
+            android:textSize="20sp"></TextView>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:id="@+id/InputWeight"
+            android:layout_marginHorizontal="10dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unesi svoju visinu:"
+            android:textSize="20sp"></TextView>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:id="@+id/InputHeight"
+            android:layout_marginHorizontal="10dp"></EditText>
+    </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Izracunaj BMI"
+            android:id="@+id/gumb1"></Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vas BMI je:"
+                android:textSize="20sp"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:textSize="20sp"
+                android:text="0"
+                android:id="@+id/BMIOutput"
+                android:layout_marginHorizontal="10dp"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/BMIStatus"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"></TextView>
+
+        <ImageView
+            android:id="@+id/statusImage"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+        </ImageView>
+
+</LinearLayout>
